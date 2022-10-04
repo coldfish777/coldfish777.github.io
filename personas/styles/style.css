@@ -1,0 +1,26 @@
+#page {
+    padding: 1rem;
+}
+
+#sketches {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.sketch {
+    max-width: 500px;
+}
+
+table, th, td { 
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+
+td {
+    padding: 0.5rem;
+    vertical-align: top;
+    text-align: left;
+}
