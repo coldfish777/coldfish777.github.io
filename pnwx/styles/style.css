@@ -1,0 +1,63 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+#page {
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+}
+
+#title {
+  color: #006CEC;
+  display: flex;
+  justify-content: center;
+  font-size:2.5vw;
+  padding-top: 3vw;
+}
+
+#search {
+  display: flex;
+  justify-content: center;
+  font-size:2vw;
+  padding: 1vw;
+}
+

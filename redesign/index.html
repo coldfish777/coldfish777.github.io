@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CS1300 Responsive Redesign</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="./scripts/script.js"></script>
+  </head>
+
+  <body id="page">
+    <div class="section">
+      <h1 class="title">CS1300 Responsive Redesign Assignment</h1>
+    </div>
+    <div class="section">
+      <h2 class="sectiontitle">Introduction</h2>
+      <p>
+        For this assignment, I was tasked with finding a poorly designed website
+        and improving on it. The first section of this page explains how I chose
+        a webpage and identified its problems. The second section details how I
+        planned out my redesign using both lo-fi and hi-fi prototypes. Finally,
+        the last section shows the redesigned website.
+      </p>
+      <nav role="navigation">
+        <h3 class="minisectiontitle">Navigation</h3>
+        <ol>
+          <li>
+            <a href="#section1">Identifying Usability Problems</a>
+          </li>
+          <li>
+            <a href="#section2">Visual Redesign</a>
+          </li>
+          <li>
+            <a href="#section3">Responsive Redesign</a>
+          </li>
+        </ol>
+      </nav>
+    </div>
+    <div class="section" id="section1">
+      <h2 class="sectiontitle">1) Identifying Usability Problems</h2>
+      <h3 class="minisectiontitle">Picking a Web Page</h3>
+      <p>
+        There are millions of websites floating around in the internet. Some
+        sites are well built and stand the test of time, while others play host
+        to numerous design and accessibility flaws. In my exploration of
+        potential sites that could benefit from a redesign, I came across many
+        candidates. To name a few, there is the
+        <a href="http://acme.com/" target="_blank">ACME Laboratories</a>
+        website,
+        <a href="http://paulgraham.com/" target="_blank">Paul Graham</a>'s
+        personal website, a site for Channing Tatum's picture book,
+        <a
+          href="https://read.macmillan.com/mcpg/the-one-and-only-sparkella/"
+          target="_blank"
+          >The One and Only Sparkella</a
+        >, and this site for
+        <a href="http://empiremetalproducts.com/home.html" target="_blank"
+          >Empire's Metal Products</a
+        >. In the end, I decided on redesigning
+        <a href="http://www.pnwx.com/" target="_blank"
+          >Pacific Northwest X-Ray Inc.</a
+        >'s official website. Below is an image of their homepage:
+      </p>
+      <div class="imagediv">
+        <img class="image" src="./resources/page.jpg" alt="Pacific Northwest X-Ray Inc. Homepage"/>
+      </div>
+      <h3 class="minisectiontitle">Finding Problems</h3>
+      <p>I evaluated the page and identified the following problems:</p>
+      <div class="tab">
+        <button class="tablink" onclick="openTab(event, 'usability')">
+          Usability
+        </button>
+        <button class="tablink" onclick="openTab(event, 'learnability')">
+          Learnability
+        </button>
+        <button class="tablink" onclick="openTab(event, 'memorability')">
+          Memorability
+        </button>
+      </div>
+      <div id="usability" class="tabcontent">
+        <ul>
+          <li>
+            There is no "see all items" button, so there is no way to find the
+            full catalog.
+          </li>
+          <li>There are no item categories to choose to browse by.</li>
+          <li>The search bar has no recommendations as you type.</li>
+          <li>
+            The "no printed catalog is available" line at the bottom of the page
+            looks like a link but isn't.
+          </li>
+        </ul>
+      </div>
+      <div id="learnability" class="tabcontent">
+        <ul>
+          <li>
+            There is no description of the company on the main page or "about
+            us" button.
+          </li>
+          <li>
+            For the popular items, it doesn't tell you the total units sold or
+            average sales.
+          </li>
+          <li>
+            There is no hierarchy for the popular items. Is the first item in
+            the second column the second most popular, or the ninth?
+          </li>
+          <li>
+            The item names are intended for advanced users and don't use simple
+            terms.
+          </li>
+        </ul>
+      </div>
+      <div id="memorability" class="tabcontent">
+        <ul>
+          <li>
+            The items don't have relevant pictures, they all use the same icon.
+          </li>
+          <li>
+            The item names are inconsistent. Some items have descriptors in the
+            name like "fastest shipping" and "best comfort" while others don't.
+          </li>
+        </ul>
+      </div>
+      <h3 class="minisectiontitle">Accessibility</h3>
+      <p>Using WAVE, I identified the following accessibility issues:</p>
+      <ul>
+        <li>
+          The page has very low contrast. The text is hard to read (black on
+          dark blue).
+        </li>
+        <li>All of the skull icons for the items do not have alt text.</li>
+        <li>The search bar does not have a label.</li>
+        <li>The language of the page is not identified.</li>
+        <li>The page has no heading structure and no page regions.</li>
+      </ul>
+    </div>
+    <div class="section" id="section2">
+      <h2 class="sectiontitle">2) Visual Redesign</h2>
+      <h3 class="minisectiontitle">Low-fidelity Wireframing</h3>
+      <p>I started by making lo-fi prototypes for the redesign:</p>
+      <div class="tab">
+        <button class="tablink" onclick="openTab(event, 'lofi_small')">
+          Mobile (375x667px)
+        </button>
+        <button class="tablink" onclick="openTab(event, 'lofi_medium')">
+          Tablet (768x1024px)
+        </button>
+        <button class="tablink" onclick="openTab(event, 'lofi_big')">
+          Desktop (3840x2160px)
+        </button>
+      </div>
+      <div id="lofi_small" class="tabcontent">
+        <div class="imagediv">
+          <img class="image" src="./resources/lofi_small.jpg" alt="lofi prototype for mobile"/>
+        </div>
+      </div>
+      <div id="lofi_medium" class="tabcontent">
+        <div class="imagediv">
+          <img class="image" src="./resources/lofi_medium.jpg" alt="lofi prototype for tablet"/>
+        </div>
+      </div>
+      <div id="lofi_big" class="tabcontent">
+        <div class="imagediv">
+          <img class="image" src="./resources/lofi_big.jpg" alt="lofi prototype for desktop"/>
+        </div>
+      </div>
+      <h3 class="minisectiontitle">Visual Design Style Guide</h3>
+      <p>Next, I designed a style guide for hi-fi prototyping: </p>
+      <div class="imagediv">
+        <img class="image" src="./resources/style_guide.jpg" alt="style guide for hifi prototype">
+      </div>
+      <h3 class="minisectiontitle">High-Fidelity Prototyping</h3>
+      <p>Using the style guide, I built hi-fi prototypes:</p>
+      <div class="tab">
+        <button class="tablink" onclick="openTab(event, 'hifi_small')">
+          Mobile (375x667px)
+        </button>
+        <button class="tablink" onclick="openTab(event, 'hifi_medium')">
+          Tablet (768x1024px)
+        </button>
+        <button class="tablink" onclick="openTab(event, 'hifi_big')">
+          Desktop (3840x2160px)
+        </button>
+      </div>
+      <div id="hifi_small" class="tabcontent">
+        <div class="imagediv">
+          <img class="image" src="./resources/hifi_small.jpg" alt="hifi prototype for mobile"/>
+        </div>
+      </div>
+      <div id="hifi_medium" class="tabcontent">
+        <div class="imagediv">
+          <img class="image" src="./resources/hifi_medium.jpg" alt="hifi prototype for tablet"/>
+        </div>
+      </div>
+      <div id="hifi_big" class="tabcontent">
+        <div class="imagediv">
+          <img class="image" src="./resources/hifi_big.jpg" alt="hifi prototype for desktop"/>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="section3">
+      <h2 class="sectiontitle">3) Responsive Redesign</h2>
+      <p>Finally, I built the redesigned website:</p>
+    </div>
+  </body>
+</html>
