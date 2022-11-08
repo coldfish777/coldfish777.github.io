@@ -36,10 +36,6 @@ img, picture, video, canvas, svg {
   max-width: 100%;
 }
 
-img {
-  border-radius: 10px;
-}
-
 input, button, textarea, select {
   font: inherit;
 }
@@ -80,5 +76,5 @@ input, button, textarea, select {
   padding: 1rem;
   max-width: 30%;
   max-height: 30rem;
-  border-radius: 10px;
+  border-radius: 15%;
 }
