@@ -41,13 +41,13 @@ input, button, textarea, select {
 }
 
 #page {
-  background-color: #aebdca;
+  background-color: #CE7777;
   font-family: 'Roboto', sans-serif;
-  color: #182747;
+  color: #F2E5E5;
 }
 
 .section {
-  background-color: #e8dfca;
+  background-color: #2B3A55;
   border-radius: 2rem;
   padding: 3rem;
   margin: 2rem;
